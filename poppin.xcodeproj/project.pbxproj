@@ -11,6 +11,7 @@
 		D20A3D132B1AF1E90096C0BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20A3D122B1AF1E90096C0BC /* ContentView.swift */; };
 		D20A3D152B1AF1EB0096C0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20A3D142B1AF1EB0096C0BC /* Assets.xcassets */; };
 		D20A3D182B1AF1EB0096C0BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20A3D172B1AF1EB0096C0BC /* Preview Assets.xcassets */; };
+		D20A3D222B1AF3210096C0BC /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20A3D212B1AF3210096C0BC /* Party.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D20A3D122B1AF1E90096C0BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D20A3D142B1AF1EB0096C0BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20A3D172B1AF1EB0096C0BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D20A3D212B1AF3210096C0BC /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		D20A3D0F2B1AF1E90096C0BC /* poppin */ = {
 			isa = PBXGroup;
 			children = (
+				D20A3D202B1AF2A40096C0BC /* View */,
+				D20A3D1F2B1AF2320096C0BC /* ViewController */,
+				D20A3D1E2B1AF22B0096C0BC /* Model */,
 				D20A3D102B1AF1E90096C0BC /* poppinApp.swift */,
-				D20A3D122B1AF1E90096C0BC /* ContentView.swift */,
 				D20A3D142B1AF1EB0096C0BC /* Assets.xcassets */,
 				D20A3D162B1AF1EB0096C0BC /* Preview Content */,
 			);
@@ -65,6 +69,29 @@
 				D20A3D172B1AF1EB0096C0BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D20A3D1E2B1AF22B0096C0BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D20A3D212B1AF3210096C0BC /* Party.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D20A3D1F2B1AF2320096C0BC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D20A3D122B1AF1E90096C0BC /* ContentView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D20A3D202B1AF2A40096C0BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20A3D132B1AF1E90096C0BC /* ContentView.swift in Sources */,
+				D20A3D222B1AF3210096C0BC /* Party.swift in Sources */,
 				D20A3D112B1AF1E90096C0BC /* poppinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
