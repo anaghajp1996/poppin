@@ -13,4 +13,5 @@ struct Party: Hashable {
     let price: Double
     let startDate: Date
     let endDate: Date?
+    let attendees: Int
 }

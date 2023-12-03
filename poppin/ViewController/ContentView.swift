@@ -51,7 +51,7 @@ struct ContentView: View {
 }
 
 func getRandomParty() -> Party {
-    return Party(name: partyNames.randomElement() ?? "Random Party!", bannerImageURL: URL(string: partyImageURLs.randomElement() ?? "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D") ?? URL(fileURLWithPath: "PartyImage"), price: 0, startDate: Date(), endDate: nil)
+    return Party(name: partyNames.randomElement() ?? "Random Party!", bannerImageURL: URL(string: partyImageURLs.randomElement() ?? "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D") ?? URL(fileURLWithPath: "PartyImage"), price: 0, startDate: Date(), endDate: nil, attendees: 0)
 }
 
 #Preview {

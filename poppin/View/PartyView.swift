@@ -16,19 +16,28 @@ struct PartyView: View {
                     .font(.largeTitle)
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
-                HStack(alignment: .top) {
-                    Image(systemName: "calendar.circle.fill").foregroundColor(.white)
+                HStack(alignment: .firstTextBaseline) {
+                    Image(systemName: "calendar.circle").foregroundColor(.white)
                     Text(fromatStartAndEndDate(startDate: party.startDate, endDate: party.endDate))
-                        .font(.title2)
+                        .font(.system(size: 16))
                         .fontWeight(.semibold)
                         .foregroundStyle(.white)
                 }
                 HStack {
-                    Image(systemName: "dollarsign.circle.fill").foregroundColor(.white)
+                    Image(systemName: "dollarsign.circle").foregroundColor(.white)
                     Text(party.price == 0 ? "Free" : "\(party.price, specifier: "%.2f")")
-                        .font(.title3)
+                        .font(.system(size: 16))
                         .fontWeight(.semibold)
                         .foregroundStyle(.white)
+                    Spacer()
+                    Image(systemName: "person.2.circle").foregroundColor(.white)
+                    Text("\(party.attendees) attendees")
+                        .font(.system(size: 16))
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.white)
+                }
+                HStack {
+                    
                 }
                 AsyncImage(url: party.bannerImageURL) { image in
                     image
@@ -42,11 +51,10 @@ struct PartyView: View {
                             .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
                         Spacer()
                     }
-                }.frame(width: .infinity)
+                }
                 .padding(.top)
             }
         }
-        .frame(width: .infinity)
         .padding(16)
         .background(
             LinearGradient(gradient: Gradient(colors: [purple, primaryColor, lightPurple]), startPoint: .topLeading, endPoint: .bottomTrailing)
