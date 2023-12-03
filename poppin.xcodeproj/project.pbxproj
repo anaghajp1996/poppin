@@ -12,6 +12,9 @@
 		D20A3D152B1AF1EB0096C0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20A3D142B1AF1EB0096C0BC /* Assets.xcassets */; };
 		D20A3D182B1AF1EB0096C0BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20A3D172B1AF1EB0096C0BC /* Preview Assets.xcassets */; };
 		D20A3D222B1AF3210096C0BC /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20A3D212B1AF3210096C0BC /* Party.swift */; };
+		D20A3D262B1B0ADD0096C0BC /* PartyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20A3D252B1B0ADD0096C0BC /* PartyView.swift */; };
+		D2BFD10C2B1C3182008C5FA0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFD10B2B1C3182008C5FA0 /* Constants.swift */; };
+		D2BFD1102B1C51FA008C5FA0 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BFD10F2B1C51FA008C5FA0 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		D20A3D142B1AF1EB0096C0BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20A3D172B1AF1EB0096C0BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D20A3D212B1AF3210096C0BC /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		D20A3D252B1B0ADD0096C0BC /* PartyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyView.swift; sourceTree = "<group>"; };
+		D2BFD10B2B1C3182008C5FA0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D2BFD10F2B1C51FA008C5FA0 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 				D20A3D102B1AF1E90096C0BC /* poppinApp.swift */,
 				D20A3D142B1AF1EB0096C0BC /* Assets.xcassets */,
 				D20A3D162B1AF1EB0096C0BC /* Preview Content */,
+				D2BFD10B2B1C3182008C5FA0 /* Constants.swift */,
+				D2BFD10F2B1C51FA008C5FA0 /* Utility.swift */,
 			);
 			path = poppin;
 			sourceTree = "<group>";
@@ -90,6 +98,7 @@
 		D20A3D202B1AF2A40096C0BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D20A3D252B1B0ADD0096C0BC /* PartyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BFD1102B1C51FA008C5FA0 /* Utility.swift in Sources */,
+				D2BFD10C2B1C3182008C5FA0 /* Constants.swift in Sources */,
 				D20A3D132B1AF1E90096C0BC /* ContentView.swift in Sources */,
+				D20A3D262B1B0ADD0096C0BC /* PartyView.swift in Sources */,
 				D20A3D222B1AF3210096C0BC /* Party.swift in Sources */,
 				D20A3D112B1AF1E90096C0BC /* poppinApp.swift in Sources */,
 			);
