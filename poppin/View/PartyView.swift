@@ -16,25 +16,12 @@ struct PartyView: View {
                     .font(.largeTitle)
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
-                HStack(alignment: .firstTextBaseline) {
-                    Image(systemName: "calendar.circle").foregroundColor(.white)
-                    Text(fromatStartAndEndDate(startDate: party.startDate, endDate: party.endDate))
-                        .font(.system(size: 16))
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                }
+                IconText(imageName: "calendar.circle", text: fromatStartAndEndDate(startDate: party.startDate, endDate: party.endDate))
                 HStack {
-                    Image(systemName: "dollarsign.circle").foregroundColor(.white)
-                    Text(party.price == 0 ? "Free" : "\(party.price, specifier: "%.2f")")
-                        .font(.system(size: 16))
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
+                    IconText(imageName: "dollarsign.circle", text: party.price == 0 ? "Free" : "\(party.price)")
+                    
                     Spacer()
-                    Image(systemName: "person.2.circle").foregroundColor(.white)
-                    Text("\(party.attendees) attendees")
-                        .font(.system(size: 16))
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
+                    IconText(imageName: "person.2.circle", text: "\(party.attendees) attendees")
                 }
                 HStack {
                     
@@ -71,5 +58,19 @@ func fromatStartAndEndDate(startDate: Date, endDate: Date?) -> String {
 }
 
 #Preview {
-    PartyView(party: parties[0])
+    PartyView(party: parties[2])
+}
+
+struct IconText: View {
+    let imageName: String
+    let text: String
+    var body: some View {
+        HStack(alignment: .firstTextBaseline) {
+            Image(systemName: imageName).foregroundColor(.white)
+            Text(text)
+                .font(.system(size: 16))
+                .fontWeight(.semibold)
+                .foregroundStyle(.white)
+        }
+    }
 }

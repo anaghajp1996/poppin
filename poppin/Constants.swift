@@ -20,11 +20,16 @@ let parties = [
 let partyNames = [
     "Retro Rewind",
     "Wizarding World Whirl",
-    "Hollywood Glam Jam"
+    "Hollywood Glam Jam",
+    "TikTok Takeover",
+    "Dinner Party",
+    "Christmas Party"
 ]
 
 let partyImageURLs = [
-    "https://images.unsplash.com/photo-1496843916299-590492c751f4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fHw%3D",
+    "https://images.unsplash.com/photo-1478088702756-f16754aaf0c4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHBhcnR5fGVufDB8fDB8fHwy",
     "https://media.istockphoto.com/id/157508303/photo/pink-mirrorball.webp?b=1&s=170667a&w=0&k=20&c=Cbv78ddeaLQSVLiKnTI_hjVqlv02TIwrUEuSYjRPzCk=",
-    "https://media.istockphoto.com/id/157531692/photo/defocused-blue-light-dots-against-black-background.webp?b=1&s=170667a&w=0&k=20&c=KxRRwtDPPjdIcNku2CIFN2nNxeL2Q8hF95apX-tQ4UM="
+    "https://media.istockphoto.com/id/157531692/photo/defocused-blue-light-dots-against-black-background.webp?b=1&s=170667a&w=0&k=20&c=KxRRwtDPPjdIcNku2CIFN2nNxeL2Q8hF95apX-tQ4UM=",
+    "https://images.unsplash.com/photo-1600854109241-46990389fb97?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHBhcnR5fGVufDB8fDB8fHwy",
+    "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGFydHl8ZW58MHx8MHx8fDI%3D"
 ]

@@ -36,7 +36,7 @@ struct ContentView: View {
             .toolbar(content: {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        initialParties.append(getRandomParty())
+                        initialParties.insert(getRandomParty(), at: 0)
                     } label: {
                         Image(systemName: "plus.circle.fill").foregroundColor(primaryColor)
                     }

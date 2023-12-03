@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				D20A3D202B1AF2A40096C0BC /* View */,
-				D20A3D1F2B1AF2320096C0BC /* ViewController */,
+				D20A3D1F2B1AF2320096C0BC /* ViewModel */,
 				D20A3D1E2B1AF22B0096C0BC /* Model */,
 				D20A3D102B1AF1E90096C0BC /* poppinApp.swift */,
 				D20A3D142B1AF1EB0096C0BC /* Assets.xcassets */,
@@ -87,12 +87,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D20A3D1F2B1AF2320096C0BC /* ViewController */ = {
+		D20A3D1F2B1AF2320096C0BC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				D20A3D122B1AF1E90096C0BC /* ContentView.swift */,
 			);
-			path = ViewController;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D20A3D202B1AF2A40096C0BC /* View */ = {
