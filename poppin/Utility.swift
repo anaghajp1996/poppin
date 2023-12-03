@@ -9,7 +9,6 @@ import Foundation
 
 func formatDate(date: Date) -> String {
     let formatter = DateFormatter()
-    formatter.dateStyle = .long
-    formatter.timeStyle = .short
+    formatter.dateFormat = "E, d MMM h:mm a"
     return (formatter.string(from: date))
 }

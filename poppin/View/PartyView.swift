@@ -18,7 +18,7 @@ struct PartyView: View {
                     .fontWeight(.bold)
                 HStack(alignment: .top) {
                     Image(systemName: "calendar.circle.fill").foregroundColor(.white)
-                    Text(formatDate(date: party.startDate))
+                    Text(fromatStartAndEndDate(startDate: party.startDate, endDate: party.endDate))
                         .font(.title2)
                         .fontWeight(.semibold)
                         .foregroundStyle(.white)
@@ -36,17 +36,30 @@ struct PartyView: View {
                         .frame(height: 200)
                         .clipShape(.rect(cornerRadii: RectangleCornerRadii.init(topLeading: 20, bottomLeading: 20, bottomTrailing: 20, topTrailing: 20)))
                 } placeholder: {
-                    ProgressView()
-                }
+                    HStack {
+                        Spacer()
+                        ProgressView().scaleEffect(2).padding()
+                            .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                        Spacer()
+                    }
+                }.frame(width: .infinity)
                 .padding(.top)
             }
         }
+        .frame(width: .infinity)
         .padding(16)
         .background(
             LinearGradient(gradient: Gradient(colors: [purple, primaryColor, lightPurple]), startPoint: .topLeading, endPoint: .bottomTrailing)
         )
         .cornerRadius(20)
     }
+}
+
+func fromatStartAndEndDate(startDate: Date, endDate: Date?) -> String {
+    let sDate = formatDate(date: startDate)
+    guard let eDate = endDate else { return sDate }
+    let formattedDate = "\(sDate) to \(formatDate(date: eDate))"
+    return formattedDate
 }
 
 #Preview {
